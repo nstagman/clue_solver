@@ -1,0 +1,157 @@
+#Cards{
+  position: relative;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  justify-content: center;
+  border-style:solid;
+  border-width: 1px 0 1px 0;
+  border-color: rgb(121, 121, 121);
+  min-height: 18rem;
+}
+#Inconsistent{
+  position: absolute;
+  top: 4rem;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: rgb(194, 61, 61);
+  color: white;
+  border-radius: 5px;
+  padding: 0.75rem;
+  opacity: 0.95;
+}
+.CardRank{
+  text-align: center;
+}
+.CardRank span{
+  font-size: 18px;
+  font-weight: bold;
+}
+.RankContainer{
+  display: flex;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+#i1 div{
+  color: rgb(175, 255, 188);
+}
+#i0 div{
+  color: rgb(253, 255, 158);
+}
+#i-1 div{
+  color: rgb(255, 160, 160);
+}
+#i0 > .RankContainer{
+  min-height: 14.33rem;
+}
+#i1 > .RankContainer{
+  min-height: 1.6rem;
+}
+#i-1 > .RankContainer{
+  min-height: 13rem;
+}
+.CardGroup{
+  display: flex;
+  flex-direction: column;
+  min-width: 7rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+}
+.Card{
+  font-size: 14px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(85, 88, 102);
+  border-width: 0;
+  padding: 0.2rem;
+}
+#HandViewContainer{
+  text-align: center;
+}
+#HandViewContainer span{
+  font-size: 18px;
+  font-weight: bold;
+}
+#HandView{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: 1fr;
+  align-items: self-start;
+  row-gap: 1rem;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
+  min-height: 13rem;
+}
+#HandView span{
+  font-size: 14px;
+  font-weight: bold;
+}
+#HandView > div div{
+  color: rgb(255, 160, 160);
+}
+.HandContainer{
+  display: flex;
+  flex-direction: column;
+  min-width: 7rem;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  /* min-height: 10.75rem; */
+}
+
+#NotSolAnchor{
+  position: relative;
+}
+#HVTContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 0.4rem;
+  right: 1rem;
+}
+#HVTContainer > label{
+  font-size: 12px;
+}
+
+/* Toggle Button */
+#HVTContainer input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+#hvtoggleContainer{
+  display: flex;
+  align-items: center;
+}
+#hvlabel{
+  cursor: pointer;
+  width: 36px;
+  height: 16px;
+  background: gray;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+#hvlabel:after{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+#hvToggle:checked + label{
+  background: var(--selected-color);
+}
+#hvToggle:checked + label:after{
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+#hvlabel:active:after{
+  width: 18px;
+}

@@ -1,0 +1,21 @@
+:root{
+  --btn-color: rgb(155, 171, 221);
+  --selected-color: rgb(124, 149, 231);
+  --box-shadows: 0px 1px 1px 0 rgb(170, 178, 196);
+  --main-background: rgb(231, 233, 241)
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--main-background);
+  color: rgb(0, 0, 0);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
